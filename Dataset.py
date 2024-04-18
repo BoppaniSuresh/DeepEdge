@@ -23,9 +23,9 @@ class Dataset(Dataset):
             
             image[x,y] = 255
             
-            #Normalize the image 
+            #Normalizing the image 
             image = image/255.0
-            
+            # To add Batch dimension
             image = torch.tensor(image).unsqueeze(0)
             #print('shape of image after adding batch dimension is : ', image.shape) # [1,50,50]
             label = torch.tensor([x,y], dtype = torch.float32)  
