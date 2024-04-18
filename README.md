@@ -24,7 +24,7 @@ After training, use the best epoch's path and paste it in test.py for testing th
 
 # Hyperparameters
 - **Criterion**: SmoothL1Loss
-  - SmoothL1Loss is chosen as the loss function for training the model. It is robust to outliers and provides a smooth gradient, making it suitable for regression tasks like predicting pixel coordinates.
+  - SmoothL1Loss is chosen as the loss function for training the model. It is robust to outliers and provides a smooth gradient, making it suitable for regression tasks.
 
 - **Optimizer**: Adam
   - Adam optimizer is employed to optimize the model parameters during training. It adapts the learning rate for each parameter, resulting in faster convergence and improved performance.
