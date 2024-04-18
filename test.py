@@ -9,7 +9,7 @@ from Model import MyModel
 test_samples = int(0.2 * 10000)
 test_dataset = Dataset(n_samples=test_samples, mean=25, std=5)
 test_loader = DataLoader(test_dataset, batch_size=32)
-
+# Load the best epoch model path
 best_model = MyModel()
 best_model.load_state_dict(torch.load('/home/suresh/Desktop/DeepEdge/paths/model_9_path.pth'))
 best_model.eval()
