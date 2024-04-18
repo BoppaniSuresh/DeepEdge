@@ -6,7 +6,7 @@ from Dataset import Dataset
 from Model import MyModel
 import os 
 
-
+# 60-20-20 train-val-test split
 total_samples = 10000
 train_samples = int(0.6 * total_samples)
 val_samples = int(0.2 * total_samples)
@@ -54,7 +54,7 @@ for epoch in range(num_epochs):
 
     print(f"Epoch {epoch+1}/{num_epochs}, Train Loss: {train_loss}, Val Loss: {val_loss}")
 
-   
+    # To save the best epoch model path
     if val_loss < best_val_loss:
         best_val_loss = val_loss
         best_epoch = epoch
