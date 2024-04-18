@@ -15,9 +15,11 @@ class Dataset(Dataset):
         try:
             # Generating the random 50x50 pixel image
             image = np.zeros((50,50), dtype = np.float32)
+            # Generate random coordinates following a Gaussian distribution
             x = int(np.random.normal(self.mean, self.std))
             y = int(np.random.normal(self.mean, self.std))
-            
+
+            # Clip coordinates to ensure they fall within the image bounds
             x = np.clip(x, 0, 49)
             y = np.clip(y, 0, 49)
             
