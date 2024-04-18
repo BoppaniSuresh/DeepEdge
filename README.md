@@ -8,11 +8,11 @@ Objective: This repository contains code to predict the coordinates (x, y) of a 
 ```
 # Dataset Generation 
 
-Dataset.py contains code to generate random dataset for the task. The dataset is generated using a Gaussian distribution. Using a Gaussian distribution allows for the randomization of pixel coordinates, ensuring diversity in the dataset. This randomness helps the model learn to predict coordinates effectively by exposing it to various scenarios during training.
+```Dataset.py``` contains code to generate random dataset for the task. The dataset is generated using a Gaussian distribution. Using a Gaussian distribution allows for the randomization of pixel coordinates, ensuring diversity in the dataset. This randomness helps the model learn to predict coordinates effectively by exposing it to various scenarios during training.
 
 # Model Architecture 
 
-Model.py contains the Pytorch Code for model architecture. The model architecture consists of convolutional layers. Convolutional layers are better suited for this task compared to a normal Multi-Layer Perceptron (MLP) because they can effectively capture spatial patterns in images. By analyzing local patterns and features, convolutional layers can learn to identify the pixel with a value of 255 and predict its coordinates accurately.
+```Model.py``` contains the Pytorch Code for model architecture. The model architecture consists of convolutional layers. Convolutional layers are better suited for this task compared to a normal Multi-Layer Perceptron (MLP) because they can effectively capture spatial patterns in images. By analyzing local patterns and features, convolutional layers can learn to identify the pixel with a value of 255 and predict its coordinates accurately.
 
 # Running the Code
 
