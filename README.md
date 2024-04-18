@@ -37,3 +37,9 @@ After training, use the best epoch's path and paste it in test.py for testing th
 
 The performance metric used for evaluation is the R^2 score. R^2 score measures how well the model predicts the pixel coordinates compared to a simple mean prediction. It ranges from 0 to 1, where 1 indicates a perfect prediction. Using R^2 score as the performance metric is suitable for this task because it provides a clear measure of the model's predictive accuracy, helping to assess its effectiveness in predicting pixel coordinates.
 
+# Results: 
+The model achieved an R^2 score of 0.996 on the test dataset. An R^2 score of 1 indicates a perfect prediction, so a score of 0.996 indicates that the model's predictions are highly accurate and closely match the ground truth coordinates.
+
+![image](https://github.com/BoppaniSuresh/DeepEdge/assets/118003753/c8ff4201-cbf3-4440-87ac-9c84b692d459)
+
+
